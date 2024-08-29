@@ -25,13 +25,13 @@ export class FacturasComponent implements OnInit {
       this.facturaServicio.eliminar(idFactura)
           .subscribe(
               () => {
-                  // Actualizar la lista de facturas después de la eliminación
+                  // Actualizar la lista de facturas 
                   this.listafacturas = this.listafacturas.filter(factura => factura.idFactura !== idFactura);
                   alert('Factura eliminada correctamente');
               },
               (error) => {
-                  console.error('Error al eliminar la factura:', error);
-                  alert('Ocurrió un error al eliminar la factura. Por favor, inténtalo nuevamente.');
+                  console.error('Error al eliminar  factura:', error);
+                  alert('Ocurrió un error al eliminar la factura. Por favor, inténtelo de nuevo.');
               }
           );
         }
