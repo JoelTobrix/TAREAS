@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class FacturaService {
-  apiurl='http://localhost/DEBER/proyectos/03MVC/controllers/factura.controller.php?op=';
+  apiurl = 'http://localhost/03MVC/controllers/factura.controller.php?op=';
 
   constructor(private lector: HttpClient) {}
 

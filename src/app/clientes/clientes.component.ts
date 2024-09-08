@@ -32,7 +32,7 @@ export class ClientesComponent {
       showCancelButton: true,
       confirmButtonColor: '#d33',
       cancelButtonColor: '#3085d6',
-      confirmButtonText: 'Eliminar Cliente'
+      confirmButtonText: 'Emliminar Cliente'
     }).then((result) => {
       if (result.isConfirmed) {
         this.clienteServicio.eliminar(idClientes).subscribe((data) => {

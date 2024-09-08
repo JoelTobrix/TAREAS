@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ClientesService {
-  apiurl='http://localhost/DEBER/proyectos/03MVC/controllers/clientes.controller.php?op=';
+  apiurl = 'http://localhost/03MVC/controllers/clientes.controller.php?op=';
   constructor(private lector: HttpClient) {}
 
   buscar(texto: string): Observable<ICliente> {
